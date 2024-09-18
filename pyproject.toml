@@ -5,8 +5,18 @@ description = ""
 authors = ["lcscosta <lcscosta@disroot.org>"]
 readme = "README.md"
 
+[tool.poetry.scripts]
+yt-stats = 'yt_stats.main:main'
+
 [tool.poetry.dependencies]
 python = "^3.12"
+google-api-python-client = "^2.145.0"
+google-auth-oauthlib = "^1.2.1"
+google-auth-httplib2 = "^0.2.0"
+python-dotenv = "^1.0.1"
+isodate = "^0.6.1"
+click = "^8.1.7"
+tabulate = "^0.9.0"
 
 
 [build-system]
